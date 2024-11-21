@@ -4,7 +4,12 @@ const returningUserDisplay = document.querySelector('#returning-user')
 const userNameDisplay = document.querySelector('#user')
 let isOpen : boolean;
 
-const reviews = [
+const reviews : {
+    name : string;
+    stars : number;
+    loyaltyUser : boolean;
+    date : string;
+}[]= [
     {
         name: 'Sheia',
         stars: 5,
@@ -36,12 +41,14 @@ const you : {
     firstName : string;
     lastName : string;
     isReturning : boolean;
-    age : number
+    age : number;
+    stayedAt : string[];
 }[]= {
     firstName : 'Teekay',
     lastName : 'Mokoena',
     isReturning: true,
-    age : 28
+    age : 28,
+    stayedAt : ['Florida-home', 'oman-flat', 'tokyo-bungalow']
 }
 
 function populateUser(isReturning : boolean, userName : string) {
@@ -50,4 +57,4 @@ function populateUser(isReturning : boolean, userName : string) {
     }
     userNameDisplay.innerHTML = userName
 }
-populateUser(you.isReturning, you.userName)
+populateUser(you.isReturning, you.firstName)
