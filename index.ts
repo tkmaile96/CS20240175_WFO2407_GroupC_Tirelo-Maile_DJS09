@@ -43,6 +43,64 @@ const you: {
     stayedAt: ['florida-home', 'oman-flat', 'tokyo-bungalow']
 }
 
+//Properties
+const properties : {
+    image : string;
+    title: string;
+    price: number;
+    location : {
+        firstLine: string;
+        city : string;
+        code : number;
+        country: string;
+    };
+    contact : string;
+    isAvailable: boolean;
+}[] =[
+    {
+        image: '' ,
+        title: 'Florida Home' ,
+        price: 45,
+        location: {
+            firstLine: '123 Main St',
+            city: 'Miami',
+            code: 33101,
+            country: 'USA'
+        },
+        contact: '123-456-7890',
+        isAvailable: true
+    },
+    {
+        image: '' ,
+        title: 'Cape Flats' ,
+        price: 35,
+        location: {
+            firstLine: '08 Madiba drive',
+            city: 'Cape Town',
+            code: 11212,
+            country: 'South Africa'
+        },
+        contact: 'thatego@gmail.com',
+        isAvailable: false
+    },
+    {
+        image: '' ,
+        title: 'Leaf Village' ,
+        price: 60,
+        location: {
+            firstLine: '11 Naruto st',
+            city: 'tokyo',
+            code: 11212,
+            country: 'Japan'
+        },
+        contact: 'keletso34@gmail.com',
+        isAvailable: true
+    }
+]
+
+
+
+
 
 
 // Functions
